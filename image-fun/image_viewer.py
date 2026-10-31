@@ -3,7 +3,7 @@ from tkinter import filedialog
 from PIL import Image, ImageTk
 
 def open_image():
-    file_path = filedialog.askopenfilename(filetypes=[("Image files", "*.png;*.jpg;*.jpeg;*.gif;*.bmp")])
+    file_path = filedialog.askopenfilename(filetypes=[("Image files", "*.png *.jpg *.jpeg *.gif *.bmp")])
     if file_path:
         image = Image.open(file_path)
         photo = ImageTk.PhotoImage(image)
